@@ -1,19 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { AppComponent } from './app.component';
-import { WeatherComponent } from './weather/weather.component';
-import { WeatherDetailsComponent } from './weather/weather-details/weather-details.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
- declarations: [
-   AppComponent,
-   WeatherComponent,
-   WeatherDetailsComponent
- ],
+ declarations: [ AppComponent ],
  imports: [
-   BrowserModule
+   BrowserModule,
+   AppRoutingModule
  ],
  providers: [],
- bootstrap: [AppComponent]
+ bootstrap: [ AppComponent ]
 })
 export class AppModule { }
